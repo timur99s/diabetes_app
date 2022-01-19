@@ -40,5 +40,3 @@ input_muscle_stiff, input_alopecia, input_obesity, input_gender)
         return render_template("index.html", sugar_result = sugar_diag, userNote = input_Note)
 
     return render_template("index.html")
-
-app.run(debug=True)
