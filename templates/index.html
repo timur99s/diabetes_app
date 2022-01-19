@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <title>Diabetes Diagnosis</title>
+</head>
+<body>
+    <h1>Sugar Diabetes Symptoms</h1>
+    <p>Enter 1 If Yes <br>   Enter 0 If No</p>
+    <p>If the result is [1] -- > HIGH chance of Diabetes<br> If the result is [0] -- > LOW chance of diabetes</p>
+
+    <form action="/" method="POST">
+        <input type="number" name="age" min = "0" max="1" placeholder="Age">
+        <input type="number" name="polyuria"  min = "0" max="1" placeholder="Polyuria">
+        <input type="number" name="polydipsia"  min = "0" max="1" placeholder="Polydipsia">
+        <input type="number" name="weight_loss"  min = "0" max="1" placeholder="Weight Loss">
+        <input type="number" name="weakness"  min = "0" max="1" placeholder="Weakness">
+        <input type="number" name="Polyphagia"  min = "0" max="1"placeholder="Polyphagia">
+        <input type="number" name="genital_thrush"  min = "0" max="1" placeholder="Genital Thrush">
+        <input type="number" name="visual_blur"  min = "0" max="1" placeholder="Visual Blur">
+        <input type="number" name="itching"  min = "0" max="1" placeholder="Itching">
+        <input type="number" name="irritability"  min = "0" max="1" placeholder="Irritability">
+        <input type="number" name="healing"  min = "0" max="1" placeholder="Healing">
+        <input type="number" name="paresis"  min = "0" max="1" placeholder="Paresis">
+        <input type="number" name="muscle_stiff"  min = "0" max="1" placeholder="Muscle Stiff">
+        <input type="number" name="alopecia"  min = "0" max="1" placeholder="Alopecia">
+        <input type="number" name="obesity"  min = "0" max="1" placeholder="Obesity">
+        <input type="number" name="gender"  min = "0" max="1" placeholder="Gender">
+        <input type="text" name="notes"  min = "0" max="1" placeholder="notes">
+        <input type="submit" id = "submit_button">
+    </form>
+
+    <div>
+    {{sugar_result}}
+    {{userNote}}
+    </div>
+
+</body>
+
+
+
+</html>
